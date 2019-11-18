@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 - Add Changelog to the project
 - Add the basic architecture for the different data cleaners.
+- An abstract factory to speify the production of each of the dataset cleaner instance.
 
 ### Changed
 
