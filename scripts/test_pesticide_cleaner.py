@@ -6,5 +6,6 @@ if __name__=='__main__':
     print('test_pesticide_cleaner.py is launched!!')
 
     inputFile = '../test_datasets/test_sample.txt'
-    cleaned_pesticide = Pesticide_dataset_cleaner(inputFile)
+    YAML_param = '../test_datasets/test.yaml'
+    cleaned_pesticide = Pesticide_dataset_cleaner(inputFile, YAML_param)
 

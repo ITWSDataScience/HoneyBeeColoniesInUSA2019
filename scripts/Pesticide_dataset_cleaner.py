@@ -3,14 +3,11 @@
 import pandas as pd
 
 from AbstractCleaner import AbstractCleaner
+from YAML_parser import YAML_Parser as yamlp
 
 class Pesticide_dataset_cleaner(AbstractCleaner):
-    def __init__(self, inputFile):
+    def __init__(self, inputFile, attribFile):
         # Get attribute list
-        attributeList = [ 'State'
-                        , 'Compound'
-                        , 'Year'
-                        , 'Units']
+        attributeList = yamlp(attribFile).getPythonList()
 
         AbstractCleaner.__init__(self, inputFile, attributeList)
-

@@ -7,5 +7,5 @@ class Pesticide_Dt_Cleaner_Factory(Cleaner_Factory):
     def __init__(self):
         Cleaner_Factory.__init__(self)
     
-    def getCleaner(self, inputFile):
-        return pdc(inputFile)
+    def getCleaner(self, inputFile, paramFile):
+        return pdc(inputFile, paramFile)
