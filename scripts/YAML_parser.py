@@ -7,7 +7,7 @@ class YAML_Parser:
     def __init__(self, inputYAML):
         self.yamlFile = inputYAML
 
-    def getPythonObject(self):
+    def getPythonList(self):
         with open( self.yamlFile, 'r') as in_file:
             try:
                 return yaml.safe_load(in_file)

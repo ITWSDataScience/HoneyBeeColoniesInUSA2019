@@ -8,9 +8,9 @@ if __name__=='__main__':
     inputYAMLFile = '../test_datasets/test.yaml'
     parser = YAML_Parser(inputYAMLFile)
 
-    print( parser.getPythonObject() )
+    print( parser.getPythonList() )
 
-    dummyList = parser.getPythonObject()
+    dummyList = parser.getPythonList()
 
     for i in range( len(dummyList) ):
         print('[{}]: {}'.format(i, dummyList[i]))
