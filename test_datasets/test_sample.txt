@@ -1,0 +1,6 @@
+State_FIPS_code	State	Compound	Year	Units	Corn	Soybeans	Wheat	Cotton	Vegetables_and_fruit	Rice	Orchards_and_grapes	Alfalfa	Pasture_and_hay	Other_crops
+01	Alabama	"2,4-D"	1992	kg	3775.1		5129.4		30.3		133.7		60348.5	6837.5
+01	Alabama	"2,4-D"	1993	kg	3950.6		14390						53527.4	20476.1
+01	Alabama	"2,4-D"	1994	kg	3324.3	66.7	103.4		12.3				50899	15173.9
+01	Alabama	"2,4-D"	1995	kg	855.3	1832.5	4560.5		4		312.5		61755	10223.2
+01	Alabama	"2,4-D"	1996	kg	3018.9	21210.5	6107.7	3548.9	32.2		216.8		107006.3	6212.6
