@@ -25,6 +25,25 @@ Now you are all set. Enjoy!
 # What each program is for?
 
 
+# Dependencies
+
+## Pandas 
+Enable all the reading and conversion of txt and CSV format files
+
+Quick installation with `pip`:
+
+```
+pip install pandas
+```
+
+## PyYAML
+Python module that enables the parsing of YAML files. YAML files are used to store attributes and allow easy import in both Python and R langauge.
+
+PyYAML exists by default along Python, but in case it is not yet installed, please do so with `pip`:
+
+```
+pip install pyyaml
+```
 
 # Contributors
 
