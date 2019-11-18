@@ -24,7 +24,6 @@ class ToDataFrameConverter:
 
     # Private methods
     def _fromTXT(self, inputFile):
-        # return pd.read_fwf(inputFile, delimiter = " ")
         return pd.read_csv(inputFile, delimiter = "\t")
     
     def _fromCSV(self, inputFile):
