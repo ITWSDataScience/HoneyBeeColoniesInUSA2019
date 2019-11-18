@@ -11,19 +11,25 @@ To start with, make sure you have Python and R installed in your operating syste
 Once you made sure that both programming languages can run under your OS environment, change your directory to the `scripts` directory under the root directory of this package, and execute the scripts as:
 
 ```
-./the_python_script.py
+./main.py <TXT or CSV file in which the dataset lives> <YAML in which the attributes wished to be kept are stored>
 ```
 
-Whereas for R scripts, execute it with the command
+For example, if I have a test.txt dataset and its corresponding attribute list in YAML file, execute the program as
 
 ```
+./main.py test.txt test.yaml
+```
+
+And the program will save a cleaned dataset CSV file in the same directory under which the original dataset file resides.
+Should you have question on how to utilize the program, you can also insert in the terminal:
 
 ```
+./main -h
+```
+
+To get a detailed instruction.
 
 Now you are all set. Enjoy!
-
-# What each program is for?
-
 
 # Dependencies
 
@@ -44,6 +50,11 @@ PyYAML exists by default along Python, but in case it is not yet installed, plea
 ```
 pip install pyyaml
 ```
+
+# What each program is for?
+
+
+
 
 # Contributors
 
