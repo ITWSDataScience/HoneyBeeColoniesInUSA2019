@@ -1,8 +1,20 @@
 # HoneyBeeColoniesInUSA2019
 
-# What is this package all about?
+# Abstract
 
-This package contains all the datsets and the means to analyze them. The main programming languages on the data analysis are Python and R. 
+The slogan “Save the Bees” has been spreading rapidly across America since the early 2000s, and we have been hearing that the bees are dying at a swift pace. Many of these campaigns focus on harmful pesticides that kill much of the bee populations. There is also a huge astigmatism against honey as it is their main production, and bees can be harmed to produce honey. 
+
+We wanted to determine the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. To make an informed analysis, we chose multiple datasets from different sources. 
+
+The first dataset, which looks at the number of bee colonies in different states, was found on the data.world website. We retrieved it from the original source: the U.S. Department of Agriculture National Agricultural Statistics Service Quick Stats Dataset.
+
+The second dataset, which looks at the pounds of honey and the prices of honey for different states, was found on Kaggle originally. We then visited the original source, the National Agricultural Statistics Service (NASS) of the U.S. Department of Agriculture, which is developed and supported by the Albert R. Mann Library at Cornell University. We used the data provided for the years 1998 to 2017.
+
+
+The third dataset looks into the use of pesticides in the United States. Retrieved from data.gov, it has data from 1992-2014 for pesticide use in the US watershed and it was created by the Department of the Interior’s US Geological Surveyor Nancy T Baker.
+
+
+Combining these datasets, this package contains all the means needed to analyze them. The main programming languages used for data analysis are Python and R. 
 
 # Let's Get Started!
 
@@ -60,7 +72,7 @@ pip install pyyaml
 
 If you have any questions or suggestions, or maybe you want to jump ahead and cotribute to the project in any way, please contact the authors and maintainers:
 
-- [Pragati Pant]()
-- [Meenu Ravi]()
-- [Jusephine Lyons]()
+- [Pragati Pant](pantp@rpi.edu)
+- [Meenu Ravi](ravim@rpi.edu)
+- [Jusephine Lyons](lyonsj7@rpi.edu)
 - [Charly Huang](huangc11@rpi.edu)
