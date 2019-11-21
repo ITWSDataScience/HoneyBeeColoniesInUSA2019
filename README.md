@@ -74,5 +74,5 @@ If you have any questions or suggestions, or maybe you want to jump ahead and co
 
 - [Pragati Pant](pantp@rpi.edu)
 - [Meenu Ravi](ravim@rpi.edu)
-- [Jusephine Lyons](lyonsj7@rpi.edu)
+- [Josephine Lyons](lyonsj7@rpi.edu)
 - [Charly Huang](huangc11@rpi.edu)
