@@ -16,11 +16,11 @@ class AbstractCleaner:
         self.cleaned_dataset = self.setTimeSpan(self.cleaned_dataset, timeFrameAttrib, fromYear, toYear)
 
         self.outFile = self.setOutputFileName(inputFile, suffix = 'cleaned_dataset')
-        self.saveAsCSVFile()
+        self.saveAsCSVFile( self.outFile )
 
     def importCSVFile(self, inputCSVFile):
         return pd.read_csv( inputCSVFile )
-    
+
     def setOutputFileName(self, inputCSVFile, suffix):
         return str(inputCSVFile) + '.' + str(suffix) + '.csv'
     
@@ -34,6 +34,6 @@ class AbstractCleaner:
         return in_dataset
 
 
-    def saveAsCSVFile(self):
-        print('Output CSV file to {}'.format(self.outFile))
-        self.cleaned_dataset.to_csv(self.outFile, index = False)
+    def saveAsCSVFile(self, outFileName):
+        print('Output CSV file to {}'.format(outFileName))
+        self.cleaned_dataset.to_csv(outFileName, index = False)
