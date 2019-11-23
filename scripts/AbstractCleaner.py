@@ -7,7 +7,7 @@ from toDataFrameConverter import ToDataFrameConverter
 class AbstractCleaner:
     def __init__(self, inputFile, attributeList):
         self.imported_dataset = ToDataFrameConverter(inputFile).getDataFrame()
-        print('The received dataset has {} rows.'.format(self.imported_dataset.size))
+        print('The received dataset has {} elements.'.format(self.imported_dataset.size))
 
         self.cleaned_dataset = self.imported_dataset[ attributeList ]
         self.outFile = self.setOutputFileName(inputFile, suffix = 'cleaned_dataset')
