@@ -6,6 +6,14 @@ from toDataFrameConverter import ToDataFrameConverter
 
 class AbstractCleaner:
     def __init__(self, inputFile, attributeList, timeRangeTuple, timeFrameAttrib = 'Year'):
+        '''
+        @brief Although AbstractCleaner is an abstract class by itself, it implement all the essential functionalities
+        that any derived cleaner class needs.
+        @inputFile: the input CSV or TXT file in which the dataset is stored
+        @attributeList: The Python list in which the attributes wished to be kept are stored
+        @timeFrameAttrib: The attribute with which to filter the time frame range. The attribute is 'Year' by default
+        @timeRangeTuple: It is a tuple in the form of (fromYear, toYear)
+        '''
         self.imported_dataset = ToDataFrameConverter(inputFile).getDataFrame()
         print('The received dataset has {} elements.'.format(self.imported_dataset.size))
 
