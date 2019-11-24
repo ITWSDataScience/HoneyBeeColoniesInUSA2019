@@ -8,6 +8,8 @@ class ToDataFrameConverter:
         if not inputFile:
             print('The input file is empty. Usage:\n converter = ToDataFrameConverter(inputFile.extension)')
             return
+        else:
+            print('Receiving {}'.format(inputFile))
     
         # Check which format it is, then call different methods for conversion
         normalizedFileName = inputFile.lower()
@@ -18,6 +20,8 @@ class ToDataFrameConverter:
         elif normalizedFileName.endswith('.csv'):
             print('Input file is in CSV format.')
             self.dataFrame = self._fromCSV(inputFile)
+        else:
+            raise Exception ('The file is not in either CSV or txt format')
     
     def getDataFrame(self):
         return self.dataFrame
