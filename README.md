@@ -65,7 +65,7 @@ pip install pyyaml
 
 # There are more in the Wiki!!
 
-Please refer to our [Wiki](https://github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019/wiki) for moer details !!
+Please refer to our [Wiki](https://github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019/wiki){:target="_blank"} for moer details !!
 
 # Contributors
 
