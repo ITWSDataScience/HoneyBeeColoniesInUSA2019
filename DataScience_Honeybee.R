@@ -78,11 +78,16 @@ summary(s2007)
 summary(s2014)
 summary(all_sets)
 
+# pull some data aside for validation
+testrows <- sample(1:nrow(all_sets), 0.30*nrow(all_sets))
+test <- all_sets[testrows, ]
+all_sets <- all_sets[-testrows, ]
+
 # linear models all states (looking at normilization and which bee value)
 modelLL <- lm(all_sets$Average.Price.Per.Pound......cents. 
               ~ all_sets$logC + all_sets$logP)
 summary(modelLL)
-modelLP <- lm(all_sets$Average.Price.Per.Pound......cents. 
+    modelLP <- lm(all_sets$Average.Price.Per.Pound......cents. 
               ~ all_sets$logC + all_sets$Production..1.000.pounds..)
 summary(modelLP)
 modelNL <- lm(all_sets$Average.Price.Per.Pound......cents. 
@@ -139,7 +144,7 @@ abline(model33, col="red")
 
 # plot the model
 plot_ly(x=all_sets$Honey.Producing.Colonies....in.the.1.000s., y=all_sets$Production..1.000.pounds.., z=all_sets$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=all_sets$State)
-#plot_ly(x=all_sets$logC, y=all_sets$logP, z=all_sets$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=all_sets$State)
+# plot_ly(x=all_sets$logC, y=all_sets$logP, z=all_sets$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=all_sets$State)
 #plot_ly(x=all_sets$Value, y=all_sets$logP, z=all_sets$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=all_sets$State)
 #plot_ly(x=all_sets$Value, y=all_sets$Production..1.000.pounds.., z=all_sets$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=all_sets$State)
 plot_ly(x=s2014$logC, y=s2014$logP, z=s2014$Average.Price.Per.Pound......cents., type="scatter3d", mode="markers", color=s2014$State)
