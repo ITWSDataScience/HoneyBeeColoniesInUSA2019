@@ -63,10 +63,9 @@ PyYAML exists by default along Python, but in case it is not yet installed, plea
 pip install pyyaml
 ```
 
-# What each program is for?
+# There are more in the Wiki!!
 
-
-
+Please refer to our [Wiki](https://github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019/wiki) for moer details !!
 
 # Contributors
 
