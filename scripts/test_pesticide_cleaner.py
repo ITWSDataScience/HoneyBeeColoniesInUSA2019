@@ -7,5 +7,6 @@ if __name__=='__main__':
 
     inputFile = '../test_datasets/test_sample.txt'
     YAML_param = '../test_datasets/test.yaml'
-    cleaned_pesticide = Pesticide_dataset_cleaner(inputFile, YAML_param)
+    yearRange = (1993, 1994)
+    cleaned_pesticide = Pesticide_dataset_cleaner(inputFile, YAML_param, yearRange)
 
